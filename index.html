@@ -1,387 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Rayyan | AI & ML Engineer | Full-Stack Developer</title>
 
-    <title>
-        Mohammed Rayyan | AI Engineer | Machine Learning Developer
-    </title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-
 <body>
 
-    <div id="particles-js"></div>
+    <!-- Ambient Glow Background Canvas -->
+    <div class="ambient-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
 
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="navbar">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-bracket">&lt;</span><span class="brand-name">Rayyan</span><span class="brand-bracket">/&gt;</span>
+            </a>
 
-    <nav>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-        <div class="logo">
-            MR.
-        </div>
-
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#experience">Experience</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-        <button id="themeToggle">
-            🌙
-        </button>
-
-    </nav>
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <h1>
-                Mohammed Rayyan
-            </h1>
-
-            <h2>
-                <span class="typing"></span>
-            </h2>
-
-            <p>
-                Passionate AI Engineer focused on Machine Learning,
-                Data Analytics, Intelligent Systems and Software Development.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn-primary">
-                    Explore Projects
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="resources/Mohammed_Rayyan.pdf" target="_blank" download class="btn-nav-primary">
+                    <i data-lucide="file-text"></i> Resume
                 </a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-                <a href="resources/Mohammed_Rayyan.pdf" download class="btn-secondary">
-                    Download Resume
-                </a>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-status">
+                        <span class="status-dot pulse"></span>
+                        <span>Open for AI & Engineering Opportunities</span>
+                    </div>
 
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Mohammed Rayyan</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typing-text" class="typing-highlight"></span><span class="cursor-blink">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Computer Science Engineer specializing in Artificial Intelligence, Machine Learning, and Full-Stack Development. Passionate about engineering intelligent automation, scalable software systems, and data-driven solutions.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get in Touch</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Work</span>
+                            <i data-lucide="code-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/rayyan0954" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/rayyan0954" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:rayyan0954@gmail.com" class="social-link" title="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <div class="hero-location">
+                            <i data-lucide="map-pin"></i>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card-glass">
+                            <div class="profile-image-container">
+                                <img src="resources/Rayyan_Profile.jpg" alt="Mohammed Rayyan" class="profile-img">
+                                <div class="profile-badge">
+                                    <i data-lucide="sparkles"></i>
+                                    <span>AI Developer</span>
+                                </div>
+                            </div>
+                            <div class="profile-info-mini">
+                                <h3>Mohammed Rayyan</h3>
+                                <p>B.Tech CS @ Presidency University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Bento Overview Section -->
+        <section id="about" class="section-padding">
+            <div class="section-header text-center">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Architecting Software & Intelligent Systems</h2>
             </div>
 
-            <div class="social-icons">
+            <div class="bento-grid">
+                <!-- Bio Bento Card -->
+                <div class="bento-card bento-bio">
+                    <div class="bento-icon-wrapper">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3>Who I Am</h3>
+                    <p>
+                        I am a Computer Science student at <strong>Presidency University</strong> (Bangalore, India) with a strong foundation in Artificial Intelligence, Data Structures, Machine Learning, and Full-Stack Engineering.
+                    </p>
+                    <p>
+                        Driven by curiosity and technical problem-solving, I bridge the gap between complex ML algorithms and user-centric software architectures.
+                    </p>
+                </div>
 
-                <a href="https://github.com/rayyan0954" target="_blank">
-                    GitHub
-                </a>
+                <!-- Metrics / Quick Stats Card -->
+                <div class="bento-card bento-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">7.2</span>
+                        <span class="stat-label">CGPA @ Presidency Univ</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Core Certifications</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">2nd PUC (PCMC)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">86%</span>
+                        <span class="stat-label">10th ICSE Board</span>
+                    </div>
+                </div>
 
-                <a href="https://www.linkedin.com/in/rayyan0954/" target="_blank">
-                    LinkedIn
-                </a>
+                <!-- Education Card -->
+                <div class="bento-card bento-education">
+                    <div class="bento-icon-wrapper">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3>Education Journey</h3>
+                    <ul class="education-list">
+                        <li>
+                            <div class="edu-title">B.Tech in Computer Science & Tech</div>
+                            <div class="edu-school">Presidency University | Expected June 2027</div>
+                            <div class="edu-meta">Bangalore, India • CGPA: 7.2</div>
+                        </li>
+                        <li>
+                            <div class="edu-title">2nd PUC (PCMC)</div>
+                            <div class="edu-school">Presidency PU College | Graduated Apr 2023</div>
+                            <div class="edu-meta">Bangalore, India • Percentage: 80%</div>
+                        </li>
+                        <li>
+                            <div class="edu-title">10th ICSE Board</div>
+                            <div class="edu-school">Florence Public School | Graduated Apr 2021</div>
+                            <div class="edu-meta">Bangalore, India • Percentage: 86%</div>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Core Interests Card -->
+                <div class="bento-card bento-focus">
+                    <div class="bento-icon-wrapper">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3>Core Focus Areas</h3>
+                    <div class="pills-container">
+                        <span class="pill"><i data-lucide="cpu"></i> Artificial Intelligence</span>
+                        <span class="pill"><i data-lucide="bot"></i> Machine Learning</span>
+                        <span class="pill"><i data-lucide="code"></i> Full-Stack Web</span>
+                        <span class="pill"><i data-lucide="database"></i> Supabase & SQL</span>
+                        <span class="pill"><i data-lucide="radio"></i> IoT Systems</span>
+                        <span class="pill"><i data-lucide="layers"></i> Software Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="section-padding">
+            <div class="section-header text-center">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Professional Work</h2>
             </div>
 
+            <div class="experience-timeline">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="role-info">
+                            <h3>AI & ML Engineering Intern</h3>
+                            <span class="company-name"><i data-lucide="building"></i> Xencus Technologies</span>
+                        </div>
+                        <span class="timeline-period"><i data-lucide="calendar"></i> Jul 2025 - Sep 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Engineered client-focused machine learning models and predictive analytics algorithms to solve real-world industry requirements.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Implemented end-to-end data preprocessing pipelines, feature engineering, and model optimization in Python.</li>
+                            <li>Delivered actionable insights through data analytics and predictive modeling for key client workflows.</li>
+                            <li>Collaborated with cross-functional development teams to integrate ML models into software deliverables.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Feature Engineering</span>
+                        <span>Data Analytics</span>
+                        <span>Predictive Modeling</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="section-header text-center">
+                <span class="section-tag">Skills & Tools</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i data-lucide="code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Java</span><span class="skill-percent">78%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span class="skill-percent">75%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i data-lucide="globe"></i>
+                        <h3>Web & Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML5 & CSS3</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Supabase & Database</span><span class="skill-percent">82%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>PHP</span><span class="skill-percent">70%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core CS & AI Concepts -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i data-lucide="cpu"></i>
+                        <h3>Core Concepts</h3>
+                    </div>
+                    <div class="skills-chips">
+                        <span class="skill-chip"><i data-lucide="check-circle-2"></i> Machine Learning</span>
+                        <span class="skill-chip"><i data-lucide="check-circle-2"></i> Data Structures & Algorithms</span>
+                        <span class="skill-chip"><i data-lucide="check-circle-2"></i> Database Management Systems</span>
+                        <span class="skill-chip"><i data-lucide="check-circle-2"></i> Computer Networks</span>
+                        <span class="skill-chip"><i data-lucide="check-circle-2"></i> Operating Systems</span>
+                        <span class="skill-chip"><i data-lucide="check-circle-2"></i> Software Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i data-lucide="wrench"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skills-chips">
+                        <span class="skill-chip"><i data-lucide="terminal"></i> VS Code</span>
+                        <span class="skill-chip"><i data-lucide="cloud"></i> Google Colab</span>
+                        <span class="skill-chip"><i data-lucide="database"></i> Supabase</span>
+                        <span class="skill-chip"><i data-lucide="git-branch"></i> Git & GitHub</span>
+                        <span class="skill-chip"><i data-lucide="hard-drive"></i> Hardware / Arduino</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (WITH PLACEHOLDER INSTRUCTION COMMENTS) -->
+        <section id="projects" class="section-padding">
+            <div class="section-header text-center">
+                <span class="section-tag">Portfolio Work</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Showcasing software applications, AI models, and engineering implementations.</p>
+            </div>
+
+            <div class="projects-container">
+                <!--
+                    ===================================================================
+                    <!-- INSERT PROJECT HERE -->
+                    To add a new project card to your portfolio, copy the template block below,
+                    uncomment it, and populate the details (title, description, tags, repo/live links).
+                    ===================================================================
+                -->
+
+                <!--
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-folder-icon">
+                            <i data-lucide="folder-git-2"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="YOUR_GITHUB_REPO_URL" target="_blank" class="project-icon-link" aria-label="GitHub Repository">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="YOUR_LIVE_DEMO_URL" target="_blank" class="project-icon-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">
+                        Brief summary of the project architecture, features, algorithms used, and problem solved.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>Python</span>
+                        <span>Supabase</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+                -->
+
+                <!-- INSERT PROJECT HERE -->
+
+                <div class="projects-placeholder-banner">
+                    <div class="placeholder-icon">
+                        <i data-lucide="folder-plus"></i>
+                    </div>
+                    <h3>Project Showcase Ready</h3>
+                    <p>No project cards are currently listed here. You can add your projects anytime by following the <code>&lt;!-- INSERT PROJECT HERE --&gt;</code> template in <code>index.html</code>.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section-padding">
+            <div class="section-header text-center">
+                <span class="section-tag">Verified Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Click or hover over any credential card to view official certificate documentation.</p>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card" data-cert-img="resources/certificates/AI_Certificate.jpg" data-cert-title="Artificial Intelligence Engineering">
+                    <div class="cert-card-top">
+                        <div class="cert-badge">
+                            <i data-lucide="shield-check"></i> Verified
+                        </div>
+                        <i data-lucide="award" class="cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Artificial Intelligence Engineering</h3>
+                    <p class="cert-issuer">AI & Machine Learning Certification</p>
+                    <button class="cert-view-btn">
+                        <i data-lucide="eye"></i> View Certificate
+                    </button>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card" data-cert-img="resources/certificates/Python_Programming.jpeg" data-cert-title="Python Programming">
+                    <div class="cert-card-top">
+                        <div class="cert-badge">
+                            <i data-lucide="shield-check"></i> Verified
+                        </div>
+                        <i data-lucide="award" class="cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Python Programming</h3>
+                    <p class="cert-issuer">Software Development & Data Science</p>
+                    <button class="cert-view-btn">
+                        <i data-lucide="eye"></i> View Certificate
+                    </button>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card" data-cert-img="resources/certificates/DevOps_Certificate.jpg" data-cert-title="DevOps & SRE">
+                    <div class="cert-card-top">
+                        <div class="cert-badge">
+                            <i data-lucide="shield-check"></i> Verified
+                        </div>
+                        <i data-lucide="award" class="cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">DevOps & SRE</h3>
+                    <p class="cert-issuer">Cloud Engineering & Automation</p>
+                    <button class="cert-view-btn">
+                        <i data-lucide="eye"></i> View Certificate
+                    </button>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card" data-cert-img="resources/certificates/Blockchain_Foundation_Program.jpg" data-cert-title="Blockchain Fundamentals">
+                    <div class="cert-card-top">
+                        <div class="cert-badge">
+                            <i data-lucide="shield-check"></i> Verified
+                        </div>
+                        <i data-lucide="award" class="cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Blockchain Fundamentals</h3>
+                    <p class="cert-issuer">Blockchain Foundation Program</p>
+                    <button class="cert-view-btn">
+                        <i data-lucide="eye"></i> View Certificate
+                    </button>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card" data-cert-img="resources/certificates/OSS_Certificate.jpg" data-cert-title="Open Source Software (OSS)">
+                    <div class="cert-card-top">
+                        <div class="cert-badge">
+                            <i data-lucide="shield-check"></i> Verified
+                        </div>
+                        <i data-lucide="award" class="cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Open Source Software (OSS)</h3>
+                    <p class="cert-issuer">Open Source Community & Contribution</p>
+                    <button class="cert-view-btn">
+                        <i data-lucide="eye"></i> View Certificate
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="contact-card-wrapper">
+                <div class="contact-card-glass">
+                    <div class="contact-content">
+                        <span class="section-tag">Let's Connect</span>
+                        <h2 class="contact-title">Interested in collaborating or hiring?</h2>
+                        <p class="contact-text">
+                            I am currently looking for opportunities in AI/ML, Data Analytics, and Software Engineering. Feel free to reach out via email or connect on social platforms!
+                        </p>
+
+                        <div class="contact-details-grid">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="label">Email Address</span>
+                                    <div class="value-with-copy">
+                                        <a href="mailto:rayyan0954@gmail.com" class="value-link">rayyan0954@gmail.com</a>
+                                        <button id="copyEmailBtn" class="copy-btn" title="Copy Email">
+                                            <i data-lucide="copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="github"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="label">GitHub Profile</span>
+                                    <a href="https://github.com/rayyan0954" target="_blank" rel="noopener noreferrer" class="value-link">github.com/rayyan0954</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="label">LinkedIn Profile</span>
+                                    <a href="https://linkedin.com/in/rayyan0954" target="_blank" rel="noopener noreferrer" class="value-link">linkedin.com/in/rayyan0954</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="label">Location</span>
+                                    <span class="value-text">Bangalore, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="brand-bracket">&lt;</span><span class="brand-name">Rayyan</span><span class="brand-bracket">/&gt;</span>
+                <p>© <span id="currentYear"></span> Mohammed Rayyan. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Back to Top <i data-lucide="arrow-up"></i></a>
+            </div>
         </div>
-
-        <div class="hero-image">
-
-            <div class="profile-card">
-
-                <img src="resources/Rayyan_Profile.jpg" alt="Mohammed Rayyan">
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="about">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <div class="glass-card">
-
-            <p>
-
-                I'm Mohammed Rayyan, a Computer Science student at
-                Presidency University with a CGPA of 7.2.
-
-                My interests include Artificial Intelligence,
-                Machine Learning, Data Analytics, Software Engineering,
-                IoT Systems and Intelligent Automation.
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <section id="experience">
-
-        <h2 class="section-title">
-            Experience
-        </h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <h3>
-                    AI & ML Engineering Intern
-                </h3>
-
-                <span>
-                    Xencus Technologies | Jul 2025 - Sep 2025
-                </span>
-
-                <p>
-
-                    Developed ML models for client-focused analytics,
-                    performed data preprocessing, feature engineering
-                    and predictive modelling using Python.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="projects">
-
-        <h2 class="section-title">
-            Featured Projects
-        </h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>Soil Monitoring System</h3>
-                <p>
-                    Raspberry Pi based environmental monitoring platform.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/rayyan0954/soil-monitoring-system" target="_blank" rel="noopener noreferrer" class="project-btn">
-                        <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        <span>View Repository</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>IoT Analytics Platform</h3>
-                <p>
-                    Sensor data collection and visualization using Supabase.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/rayyan0954/iot-analytics-platform" target="_blank" rel="noopener noreferrer" class="project-btn">
-                        <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        <span>View Repository</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Hotel Booking Website</h3>
-                <p>
-                    Booking system with OTP verification and automation.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/rayyan0954/hotel-booking-website" target="_blank" rel="noopener noreferrer" class="project-btn">
-                        <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        <span>View Repository</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Arduino Calculator</h3>
-                <p>
-                    Embedded calculator built using Arduino.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/rayyan0954/arduino-calculator" target="_blank" rel="noopener noreferrer" class="project-btn">
-                        <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        <span>View Repository</span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="skills">
-
-        <h2 class="section-title">
-            Skills
-        </h2>
-
-        <div class="skills-grid">
-
-            <div class="skill">
-                <span>Python</span>
-                <div class="bar"><div style="width:90%"></div></div>
-            </div>
-
-            <div class="skill">
-                <span>Machine Learning</span>
-                <div class="bar"><div style="width:85%"></div></div>
-            </div>
-
-            <div class="skill">
-                <span>SQL</span>
-                <div class="bar"><div style="width:85%"></div></div>
-            </div>
-
-            <div class="skill">
-                <span>Java</span>
-                <div class="bar"><div style="width:75%"></div></div>
-            </div>
-
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="bar"><div style="width:75%"></div></div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="certifications">
-
-        <h2 class="section-title">
-            Certifications
-        </h2>
-
-        <p class="section-subtitle">
-            Hover over any credential card below to inspect official certificate documentation and verify credential authenticity.
-        </p>
-
-        <div class="cert-grid">
-
-            <div class="cert-card">
-                <div class="cert-card-content">
-                    <div class="cert-badge">Verified</div>
-                    <h3>Python Programming</h3>
-                    <span class="hover-hint">Hover to verify authenticity</span>
-                </div>
-                <div class="cert-preview-popup">
-                    <img src="resources/certificates/Python_Programming.jpeg" alt="Python Programming Certificate Preview" loading="lazy">
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-card-content">
-                    <div class="cert-badge">Verified</div>
-                    <h3>Artificial Intelligence Engineering</h3>
-                    <span class="hover-hint">Hover to verify authenticity</span>
-                </div>
-                <div class="cert-preview-popup">
-                    <img src="resources/certificates/AI_Certificate.jpg" alt="Artificial Intelligence Engineering Certificate Preview" loading="lazy">
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-card-content">
-                    <div class="cert-badge">Verified</div>
-                    <h3>Blockchain</h3>
-                    <span class="hover-hint">Hover to verify authenticity</span>
-                </div>
-                <div class="cert-preview-popup">
-                    <img src="resources/certificates/Blockchain_Foundation_Program.jpg" alt="Blockchain Certificate Preview" loading="lazy">
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-card-content">
-                    <div class="cert-badge">Verified</div>
-                    <h3>DevOps & SRE</h3>
-                    <span class="hover-hint">Hover to verify authenticity</span>
-                </div>
-                <div class="cert-preview-popup">
-                    <img src="resources/certificates/DevOps_Certificate.jpg" alt="DevOps & SRE Certificate Preview" loading="lazy">
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-card-content">
-                    <div class="cert-badge">Verified</div>
-                    <h3>Open Source Software</h3>
-                    <span class="hover-hint">Hover to verify authenticity</span>
-                </div>
-                <div class="cert-preview-popup">
-                    <img src="resources/certificates/OSS_Certificate.jpg" alt="Open Source Software Certificate Preview" loading="lazy">
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="contact">
-
-        <h2 class="section-title">
-            Contact
-        </h2>
-
-        <div class="glass-card">
-
-            <p>
-                Email:
-                rayyan0954@gmail.com
-            </p>
-
-            <p>
-                GitHub:
-                github.com/rayyan0954
-            </p>
-
-            <p>
-                LinkedIn:
-                linkedin.com/in/rayyan0954
-            </p>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <p>
-            © 2026 Mohammed Rayyan |
-            AI Engineer | Machine Learning Developer
-        </p>
-
     </footer>
 
+    <!-- Certificate Modal / Lightbox -->
+    <div id="certModal" class="cert-modal" aria-hidden="true">
+        <div class="cert-modal-backdrop"></div>
+        <div class="cert-modal-dialog">
+            <div class="cert-modal-header">
+                <h3 id="modalTitle">Certificate Preview</h3>
+                <button id="closeModalBtn" class="modal-close-btn" aria-label="Close modal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="cert-modal-body">
+                <img id="modalImg" src="" alt="Certificate Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Source File -->
     <script src="script.js"></script>
-
 </body>
-
 </html>
